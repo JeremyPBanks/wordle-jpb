@@ -6,7 +6,7 @@ import { Keyboard } from "./components/keyboard/Keyboard";
 import { AboutModal } from "./components/modals/AboutModal";
 import { InfoModal } from "./components/modals/InfoModal";
 import { WinModal } from "./components/modals/WinModal";
-import { isWordInWordList, isWinningWord, solution } from "./lib/words";
+import { isWordInWordList, isWinningWord, solution, wordList } from "./lib/words";
 
 function App() {
   const [guesses, setGuesses] = useState<string[]>([]);
@@ -65,11 +65,11 @@ function App() {
     <div className="py-8 max-w-7xl mx-auto sm:px-6 lg:px-8">
       <Alert message="Word not found" isOpen={isWordNotFoundAlertOpen} />
       <Alert
-        message={`You lost, the word was ${solution}`}
+        message={`You lost, the word was ${wordList[solution]}`}
         isOpen={isGameLost}
       />
       <div className="flex w-80 mx-auto items-center mb-8">
-        <h1 className="text-xl grow font-bold">Not Wordle</h1>
+              <h1 className="text-xl grow font-bold">Wordle - V+J Edition - Puzzle {solution +1}</h1>
         <InformationCircleIcon
           className="h-6 w-6 cursor-pointer"
           onClick={() => setIsInfoModalOpen(true)}

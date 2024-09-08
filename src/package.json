@@ -1,6 +1,7 @@
 {
   "name": "wordle",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -50,6 +51,14 @@
   },
   "description": "- Go play the real Wordle [here](https://www.powerlanguage.co.uk/wordle/)\r - Read the story behind it [here](https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html)\r - Try a demo of this clone project [here](https://61dc4dbf9f2b9d0007925c02--thirsty-hoover-08af60.netlify.app/)",
   "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremyPBanks/wordle-jpb.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeremyPBanks/wordle-jpb/issues"
+  },
+  "homepage": "https://github.com/JeremyPBanks/wordle-jpb#readme"
 }
