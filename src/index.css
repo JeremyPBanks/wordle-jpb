@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes flip {
+.cell-animation {
+    animation: revealCharCell linear;
+    animation-duration: 0.15s;
+}
+
+@keyframes revealCharCell {
     0% {
         transform: rotateX(0);
         background: #fff;

@@ -1,4 +1,4 @@
-export const wordList = ['dance', 'rings', 'altar', 'bride', 'groom', 'unity', 'dress', 'feast']
+export const wordList = ['DANCE', 'RINGS', 'ALTAR', 'BRIDE', 'GROOM', 'UNITY', 'DRESS', 'FEAST']
 
 
 const WORDS = [
@@ -5766,7 +5766,9 @@ export const isWordInWordList = (word: string) => {
 };
 
 export const isWinningWord = (word: string) => {
-    return wordList[solution] === word;
+    console.log("Word->" + word);
+    console.log("Winning Word->" + wordList[solutionIndex]);
+    return wordList[solutionIndex] === word;
 };
 
 export const getWordOfDay = () => {
@@ -5775,4 +5777,4 @@ export const getWordOfDay = () => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-export const solution = getWordOfDay();
+export const solutionIndex = getWordOfDay();
