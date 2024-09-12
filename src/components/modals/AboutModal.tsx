@@ -56,17 +56,17 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                     <p className="text-sm text-gray-500">
                       This is an open source clone of the game Wordle -{" "}
                       <a
-                        href="https://github.com/hannahcode/wordle"
+                        href="https://github.com/JeremyPBanks/wordle-jpb"
                         className="underline font-bold"
                       >
-                        check out the code here
+                        Source Code
                       </a>{" "}
                       and{" "}
                       <a
-                        href="https://www.powerlanguage.co.uk/wordle/"
+                        href="https://www.nytimes.com/games/wordle/index.html"
                         className="underline font-bold"
                       >
-                        play the original here
+                        Original NYT Connections
                       </a>
                     </p>
                   </div>
